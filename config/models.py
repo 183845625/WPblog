@@ -76,7 +76,7 @@ class SideBar(models.Model):
             context = {
                 'comments': Comment.objects.filter(status=Comment.STATUS_NORMAL)
             }
-            result = render_to_string('config/block/sidebar_comments.html', context)
+            result = render_to_string('config/blocks/sidebar_comments.html', context)
         return result
 
     class Meta:
